@@ -1,6 +1,6 @@
 /* eslint-disable */
 import { 
-    blueThemeLight
+    blueThemeLight, blueThemeDark
 } from '../theme/theme'
 
 

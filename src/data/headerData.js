@@ -1,9 +1,10 @@
 import resume from '../assets/pdf/resume.pdf'
+import foto from '../assets/png/fotoPersonal.png';
 
 export const headerData = {
-    name: 'Jane Doe',
-    title: "Web Developer",
-    desciption:"There wasn't a bird in the sky, but that was not what caught her attention. It was the clouds. The deep green that isn't the color of clouds, but came with these. She knew what was coming and she hoped she was prepared. ",
-    image: 'https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/landingImg.png',
+    name: 'Javier Torrecilla',
+    title: "Ingeniero de Software",
+    desciption:"La calidad nunca es un accidente, siempre resulta de cuatro cosas: intención, esfuerzo sincero, dirección inteligente y ejecutoria con talento. - William Foster.",
+    image: foto,
     resumePdf: resume
 }

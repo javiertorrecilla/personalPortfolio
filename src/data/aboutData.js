@@ -1,6 +1,6 @@
 export const aboutData = {
-    title: "Who I am",
-    description1: "My name's Jane. I'm a web designer and developer based in Southampton, UK.",
-    description2: "During the day I work as a lead developer at a local agency and in the evening I  work on freelance projects and utilize the time to built my own products. I spent my leisure hours writing articles and poetry. Right now I'm also trying a hand at machine learning and AI. I love to learn and explore new arenas.",
+    title: "¿Quién soy?",
+    description1: "Soy estudiante de último año de Ingeniería del Software en la Universidad de Málaga, apasionado por la tecnología, el trabajo en equipo y el aprendizaje continuo. Extrovertido y orientado a la colaboración, disfruto trabajando en entornos donde la comunicación y el apoyo mutuo son clave para alcanzar metas comunes. Me encanta enfrentar desafíos como oportunidades para crecer personal y profesionalmente.",
+    description2: "A lo largo de mi carrera, he adquirido experiencia sólida en desarrollo back-end con Java y Node.js, así como en front-end con React. He participado en varios proyectos web que han fortalecido mis habilidades de resolución de problemas y aplicado mis conocimientos teóricos a escenarios reales. Además, cuento con un nivel B2 de inglés, conocimientos básicos de chino, francés y alemán, lo que amplía mis habilidades de comunicación y adaptabilidad cultural.",
     image: 2
 }
