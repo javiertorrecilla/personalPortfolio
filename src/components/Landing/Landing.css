@@ -1,9 +1,10 @@
-.landing {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  .landing {
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Evita el desbordamiento */
+  } 
   
   .landing--container {
     display: flex;
@@ -24,6 +25,7 @@
     border-radius: 50%;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
     transition: opacity 0.3s;
+    max-width: 100%; /* Asegura que la imagen no se desborde */
   }
   
   .landing--container-left {
@@ -67,6 +69,7 @@
     margin-right: 7rem;
     font-family: var(--primaryFont);
     font-style: normal;
+    max-width: 100%; /* Asegura que el contenido no se desborde */
   }
   
   .lcr--content h6 {
@@ -97,6 +100,7 @@
     align-items: center;
     justify-content: space-between;
     font-family: "var(--primaryFont)", sans-serif;
+    max-width: 100%; /* Asegura que los botones no se desborden */
   }
 
     .resumeBtn,
