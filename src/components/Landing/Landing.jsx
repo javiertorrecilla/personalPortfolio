@@ -1,9 +1,9 @@
 import React, { useContext, useState } from 'react';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
+import { Link } from 'react-scroll';
 import { ThemeContext } from '../../context/ThemeContext';
 import { headerData } from '../../data/headerData';
 import { socialsData } from '../../data/socialsData';
-import { FaTwitter, FaLinkedin, FaGithub, FaYoutube, FaBlogger, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import './Landing.css';
 
 function Landing() {
@@ -88,7 +88,7 @@ function Landing() {
             <div className='lcr-buttonContainer'>
               {headerData.resumePdf && (
                 <a
-                  href={headerData.resumePdf}
+                  href={headerData.resumePdf} // TODO: Cambair esto por mi CV
                   download='resume'
                   target='_blank'
                   rel='noreferrer'
@@ -102,16 +102,21 @@ function Landing() {
                   </button>
                 </a>
               )}
-              <NavLink to='/#contacts' smooth={true} spy='true' duration={2000}>
-                <button
-                    className='contactBtn'
-                    style={buttonStyles.contactBtn}
-                    onMouseEnter={() => setIsHoveredContact(true)}
-                    onMouseLeave={() => setIsHoveredContact(false)}
-                >
-                  Contacto
-                </button>
-              </NavLink>
+              <Link
+                  to='contacts' 
+                  smooth={true}
+                  spy={true}
+                  duration={2000}
+              >
+                  <button
+                      className='contactBtn'
+                      style={buttonStyles.contactBtn}
+                      onMouseEnter={() => setIsHoveredContact(true)}
+                      onMouseLeave={() => setIsHoveredContact(false)}
+                  >
+                      Contacto
+                  </button>
+              </Link>
             </div>
           </div>
         </div>
