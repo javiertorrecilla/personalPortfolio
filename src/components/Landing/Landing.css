@@ -1,9 +1,10 @@
   .landing {
   height: 100vh; /* Ocupa toda la altura de la pantalla */
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* Evita el desbordamiento */
+  box-sizing: border-box;
   } 
   
   .landing--container {
@@ -11,6 +12,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    width: 100%;
     position: relative;
   }
   
@@ -37,7 +39,7 @@
   }
   
   .lcl--content {
-    margin: 3rem;
+    margin: 5rem;
     width: 100%;
     display: flex;
     align-items: center;

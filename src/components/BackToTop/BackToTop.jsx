@@ -41,7 +41,7 @@ function BackToTop() {
                 <IoIosArrowDropupCircle
                     style={{
                         fontSize: '3rem',
-                        color: theme.primary,
+                        color: theme.tertiary,
                     }}
                 />
             </button>
