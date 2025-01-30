@@ -5,6 +5,7 @@ import About from '../components/about/About';
 import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
+import Education from '../components/Education/Education';
 import { headerData } from '../data/headerData';
 
 function Main() {
@@ -17,6 +18,7 @@ function Main() {
       <Navbar/>
       <Landing />
       <About />
+      <Education/>
       <Contact/>
       <Footer/>
     </div>

@@ -1,0 +1,216 @@
+.education {
+    min-height: 100vh;
+    position: relative;
+    padding: 4rem 0;
+    background-color: var(--secondary); /* Usa el color del tema */
+}
+
+.education .line-styling {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.education .line-styling .style-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--primary); /* Usa el color del tema */
+}
+
+.education .line-styling .style-line {
+    width: 95%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: var(--primary); /* Usa el color del tema */
+}
+
+.education-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 8rem;
+    height: fit-content;
+}
+
+.education-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex: 0.6; /* Ocupa el 60% del espacio */
+    width: 100%;
+    height: fit-content;
+    padding: 2rem;
+}
+
+.education-description > h1 {
+    font-size: 3.5rem;
+    font-family: var(--primaryFont);
+    margin-bottom: 40px;
+    color: var(--primary); /* Usa el color del tema */
+}
+
+.education-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+    background-color: var(--primary30); /* Usa el color del tema */
+}
+
+.education-card:hover {
+    transform: translateY(-5px); /* Efecto hover */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Sombra al hover */
+}
+
+.educard-img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: var(--primary); /* Usa el color del tema */
+}
+
+.educard-img > img {
+    width: 40px;
+}
+
+.education-details {
+    margin-left: 1.5rem;
+}
+
+.education-image {
+    flex: 0.4; /* Ocupa el 40% del espacio */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea la imagen a la izquierda */
+    padding: 1rem;
+}
+
+.education-image > img {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Responsive Design */
+@media (min-width: 992px) and (max-width: 1380px) {
+    .education-description > h1 {
+        font-size: 3.3rem;
+        margin-bottom: 30px;
+    }
+
+    .education-card {
+        width: 100%;
+    }
+
+    .education-image > img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .education .line-styling {
+        top: 20px;
+    }
+
+    .education-body {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .education-description {
+        flex: 0.6;
+        padding: 20px;
+    }
+
+    .education-description > h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .education-card {
+        width: 100%;
+        padding: 1.2rem;
+    }
+
+    .education-image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .education .line-styling .style-circle {
+        width: 8px;
+        height: 8px;
+    }
+
+    .education-description > h1 {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .education .line-styling .style-circle {
+        width: 5px;
+        height: 5px;
+    }
+
+    .education .line-styling .style-line {
+        width: 93%;
+        height: 3px;
+    }
+
+    .education-description > h1 {
+        font-size: 2.5rem;
+    }
+
+    .education-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .education-details {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .educard-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .educard-img > img {
+        width: 30px;
+    }
+
+    .education-details > h4 {
+        font-size: 1.1rem;
+    }
+
+    .education-details > h5 {
+        font-size: 1rem;
+    }
+}
