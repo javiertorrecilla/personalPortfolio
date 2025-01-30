@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Landing from '../components/Landing/Landing';
-import About from '../components/about/About';
+import About from '../components/About/About';
 import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
