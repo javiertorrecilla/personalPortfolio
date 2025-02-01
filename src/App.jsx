@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom'; // Elimina Switch
+import { Routes, Route } from 'react-router-dom'; 
 import Main from './pages/Main';
 import ScrollToTop from './utils/ScrollToTop';
 import BackToTop from './components/BackToTop/BackToTop';
@@ -7,9 +7,9 @@ import BackToTop from './components/BackToTop/BackToTop';
 function App() {
   return (
     <div>
-      <ScrollToTop /> {/* ScrollToTop debe estar fuera de Routes */}
+      <ScrollToTop />
       <Routes>
-        <Route path='/' element={<Main />} /> {/* Usa `element` en lugar de `component` */}
+        <Route path='/' element={<Main />} />
       </Routes>
       <BackToTop />
     </div>
