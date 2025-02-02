@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { FaBars, FaTimes, FaUser, FaGraduationCap, FaCode, FaBriefcase, FaLaptopCode, FaAward, FaTools, FaEnvelope } from 'react-icons/fa';
 import { ThemeContext } from '../../context/ThemeContext';
-import { Link } from 'react-scroll'; // Importar react-scroll
+import { Link } from 'react-scroll'; 
 import './Navbar.css';
 
 function Navbar() {

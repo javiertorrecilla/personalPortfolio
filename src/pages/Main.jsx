@@ -7,6 +7,7 @@ import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
 import Education from '../components/Education/Education';
 import Achievements from '../components/Achievements/Achievements';
+import Skills from '../components/Skills/Skills'
 import { headerData } from '../data/headerData';
 
 function Main() {
@@ -20,6 +21,7 @@ function Main() {
       <Landing />
       <About />
       <Education/>
+      <Skills/>
       <Achievements/>
       <Contact/>
       <Footer/>

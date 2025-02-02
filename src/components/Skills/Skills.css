@@ -1,0 +1,128 @@
+/* 🔄 Contenedor principal del carrusel */
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 2rem 0;
+    overflow: hidden;
+}
+
+.skillsHeader {
+    text-align: center;
+    width: 100%;
+}
+
+.skillsHeader h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--primary);
+}
+
+.skillsContainer {
+    width: 100vw;
+    overflow: hidden;
+    padding: 1rem 0;
+}
+
+.skill--box {
+    background: rgba(84, 95, 196, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(84, 95, 196, 0.5);
+    box-shadow: 0px 10px 30px rgb(84, 95, 196);
+    border-radius: 15px;
+    width: 12vw;
+    height: 12vw;
+    max-width: 180px;
+    max-height: 180px;
+    min-width: 100px;
+    min-height: 100px;
+    margin: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 🔥 Sombra más intensa en hover */
+.skill--box:hover {
+    transform: scale(1.12);
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* 🌟 Efecto de brillo en hover */
+.skill--box::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 70%);
+    transition: all 0.4s ease-in-out;
+}
+
+.skill--box:hover::before {
+    top: 0;
+    left: 0;
+}
+
+/* 🔹 Imagen dentro de la tarjeta */
+.skill--box > img {
+    height: 50%;
+    pointer-events: none;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+/* 🔹 Nombre de la habilidad */
+.skill--box h3 {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+/* 📱 Ajustes Responsive */
+@media screen and (max-width: 768px) {
+    .skillsHeader h2 {
+        font-size: 2.5rem;
+    }
+
+    .skill--box {
+        width: 15vw;
+        height: 15vw;
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .skill--box h3 {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skillsHeader h2 {
+        font-size: 2rem;
+    }
+
+    .skill--box {
+        width: 20vw;
+        height: 20vw;
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .skill--box h3 {
+        font-size: 0.8rem;
+    }
+}
