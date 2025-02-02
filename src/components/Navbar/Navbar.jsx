@@ -47,7 +47,7 @@ function Navbar() {
                             <span>¿Quién Soy?</span>
                         </Link>
                         <Link
-                            to="educacion"
+                            to="education"
                             smooth={true}
                             duration={1500}
                             className="rectangular-button"

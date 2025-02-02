@@ -1,0 +1,124 @@
+/* Estilos base */
+.achievement {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3rem 1.5rem;
+    box-sizing: border-box;
+}
+
+.achievement-body {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.achievement-body h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.achievement-cards {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.achievement-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 1000px;
+    transition: background-color 200ms ease-in-out;
+    box-sizing: border-box;
+}
+
+.achievecard-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 600px;
+}
+
+.achievecard-details1 h2 {
+    margin-bottom: 6px;
+}
+
+.achievecard-details1 p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.achievecard-imgcontainer {
+    width: 170px;
+    height: 150px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.achievecard-imgcontainer > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Tablets y pantallas medianas */
+@media (max-width: 992px) {
+    .achievement-body h1 {
+        font-size: 2.5rem;
+    }
+
+    .achievement-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 95%;
+    }
+
+    .achievecard-content {
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .achievecard-imgcontainer {
+        margin-top: 1rem;
+    }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+    .achievement {
+        padding: 1rem;
+    }
+
+    .achievement-body h1 {
+        font-size: 2rem;
+    }
+
+    .achievement-cards {
+        padding: 1rem 0;
+    }
+
+    .achievement-card {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .achievecard-imgcontainer {
+        width: 140px;
+        height: 120px;
+    }
+}
