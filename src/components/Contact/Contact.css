@@ -72,6 +72,7 @@
     font-family: var(--primaryFont);
     font-size: 1rem;
     transition: border-color 0.3s ease;
+    box-sizing: border-box;  /* Para evitar desbordamientos */
 }
 
 .form-input:focus, .form-message:focus {
@@ -85,8 +86,8 @@
 }
 
 .submit-btn button {
-    width: 150px; /* Tamaño fijo */
-    height: 50px; /* Tamaño fijo */
+    width: 150px;
+    height: 50px;
     border-radius: 25px;
     background-color: var(--primary);
     color: var(--secondary);
@@ -231,25 +232,25 @@
     }
     .contacts-details {
         padding-left: 0;
-        align-items: flex-start; /* Alinear a la izquierda en pantallas pequeñas */
+        align-items: flex-start;
     }
     .personal-details {
-        justify-content: flex-start; /* Alinear a la izquierda en pantallas pequeñas */
+        justify-content: flex-start;
     }
     .socialmedia-icons {
-        justify-content: flex-start; /* Alinear a la izquierda en pantallas pequeñas */
+        justify-content: flex-start;
     }
 }
 
 @media (max-width: 768px) {
     .contacts--container > h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
     .form-input, .form-message {
         padding: 0.8rem;
     }
     .submit-btn button {
-        width: 150px; /* Tamaño fijo */
+        width: 150px;
     }
 }
 
@@ -281,7 +282,7 @@
         padding: 0.6rem;
     }
     .submit-btn button {
-        height: 50px; /* Tamaño fijo */
+        height: 50px;
     }
     .personal-details p {
         font-size: 0.9rem;

@@ -49,11 +49,11 @@ function Contact() {
                     setOpen(false);
                 });
             } else {
-                setErrMsg('Invalid email');
+                setErrMsg('Email inválido');
                 setOpen(true);
             }
         } else {
-            setErrMsg('Enter all the fields');
+            setErrMsg('Por favor, rellene todos los campos');
             setOpen(true);
         }
     };
