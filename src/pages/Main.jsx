@@ -1,10 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Landing from '../components/Landing/Landing';
-import About from '../components/About/About';
+import About from '../components/About';
 import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
-import Navbar from '../components/Navbar/Navbar';
+import Navbar from '../components/Navbar';
 import Education from '../components/Education/Education';
 import Achievements from '../components/Achievements/Achievements';
 import Skills from '../components/Skills/Skills'
@@ -14,7 +14,7 @@ function Main() {
   return (
     <div>
       <Helmet>
-        <title>{headerData.name} - Portfolio</title>
+        <title>Javier Torrecilla Reyes - Portfolio</title>
       </Helmet>
 
       <Navbar/>

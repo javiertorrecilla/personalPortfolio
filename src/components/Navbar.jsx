@@ -1,12 +1,14 @@
 import { NavLink } from "react-router-dom";
 
+import '../styles.css'
+
 export default function Navbar() {
   const navItems = [
-    { name: "About", path: "/" },
-    { name: "Resume", path: "/resume" },
-    { name: "Portfolio", path: "/portfolio" },
-    { name: "Blog", path: "/blog" },
-    { name: "Contact", path: "/contact" },
+    { name: "Sobre mí", path: "/" },
+    { name: "Currículum", path: "/curriculum" },
+    { name: "Portafolio", path: "/portfolio" },
+    { name: "Certificaciones", path: "/certificaciones" },
+    { name: "Contacto", path: "/contacto" },
   ];
 
   return (
