@@ -4,7 +4,7 @@ export default function About() {
   return (
     <article className="about active" data-page="about">
       <header>
-        <h2 className="h2 article-title">About me</h2>
+        <h2 className="h2 article-title">Sobre mí</h2>
       </header>
 
       <section className="about-text">
