@@ -1,13 +1,12 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom'; 
-import Main from './pages/Main';
-import Prueba from './pages/prueba';
-import ScrollToTop from './utils/ScrollToTop';
-import BackToTop from './components/BackToTop/BackToTop';
+import Contact from './components/Contact';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Resume from './components/Resume';
+import Portfolio from './components/Portfolio';
+import Certificaciones from './components/Blog';
 
 export default function App() {
   return (
@@ -18,6 +17,9 @@ export default function App() {
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/curriculum" element={<Resume />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/certificaciones" element={<Certificaciones />} />
+          <Route path="/contacto" element={<Contact />} />
         </Routes>
       </div>
     </main>
