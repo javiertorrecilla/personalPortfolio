@@ -7,6 +7,7 @@ import BackToTop from './components/BackToTop/BackToTop';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import About from './components/About';
+import Resume from './components/Resume';
 
 export default function App() {
   return (
@@ -16,7 +17,7 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<About />} />
-          <Route path="/curriculum" element={<Prueba />} />
+          <Route path="/curriculum" element={<Resume />} />
         </Routes>
       </div>
     </main>

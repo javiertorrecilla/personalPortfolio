@@ -109,6 +109,9 @@
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
 
+  justify-content: center;
+  align-items: center;
+
 }
 
 
@@ -164,6 +167,13 @@ body { background: var(--smoky-black); }
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
+
+#root {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: center;
+}
 
 .sidebar,
 article {
@@ -303,9 +313,10 @@ article.active {
 \*-----------------------------------*/
 
 main {
-  margin: 15px 12px;
-  margin-bottom: 75px;
+  margin: 15px auto 75px auto;  
   min-width: 259px;
+  max-width: 1200px;           
+  width: 100%;
 }
 
 
@@ -593,6 +604,15 @@ main {
   background: var(--bg-gradient-onyx);
   border-radius: 14px;
   box-shadow: var(--shadow-1);
+  overflow: hidden;
+}
+
+.testimonials-avatar-box img {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .testimonials-item-title { margin-bottom: 7px; }
@@ -831,43 +851,6 @@ main {
   line-height: 1.6;
 }
 
-
-/**
- * skills 
- */
-
-.skills-title { margin-bottom: 20px; }
-
-.skills-list { padding: 20px; }
-
-
-.skills-item:not(:last-child) { margin-bottom: 15px; }
-
-.skill .title-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 8px;
-}
-
-.skill .title-wrapper data {
-  color: var(--light-gray);
-  font-size: var(--fs-7);
-  font-weight: var(--fw-300);
-}
-
-.skill-progress-bg {
-  background: var(--jet);
-  width: 100%;
-  height: 8px;
-  border-radius: 10px;
-}
-
-.skill-progress-fill {
-  background: var(--text-gradient-yellow);
-  height: 100%;
-  border-radius: inherit;
-}
 
 
 
@@ -1499,8 +1482,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: 8px;
     left: -43px;
   }
-
-  .skills-item:not(:last-child) { margin-bottom: 25px; }
 
 
 
