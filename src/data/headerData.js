@@ -1,4 +1,4 @@
-import resume from '../assets/pdf/CV_Javier_Torrecilla_Reyes.pdf';
+import resume from '../assets/pdf/CV_JavierTorrecillaReyes.pdf';
 import foto from '../assets/png/fotoPersonal.png';
 
 export const headerData = {
