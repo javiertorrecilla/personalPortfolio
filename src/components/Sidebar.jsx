@@ -1,6 +1,12 @@
 import '../styles.css';
 
+import {contactsData} from '../data/contactsData.js';
+import {socialsData} from '../data/socialsData.js';
+import {headerData} from '../data/headerData.js';
+
 import { MdAlternateEmail, MdOutlinePhoneIphone, MdOutlineCalendarMonth, MdLocationOn } from 'react-icons/md';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { GrDocumentText } from 'react-icons/gr';
 
 import fotoPersonal from '../assets/png/fotoPersonal.png';
 
@@ -13,7 +19,7 @@ function Sidebar() {
         </figure>
 
         <div className="info-content">
-          <h1 className="name">Javier Torrecilla Reyes</h1>
+          <h1 className="name">{contactsData.name}</h1>
           <p className="title">Ingeniero de Software</p>
         </div>
       </div>
@@ -28,7 +34,7 @@ function Sidebar() {
             </div>
             <div className="contact-info">
               <p className="contact-title">Email</p>
-              <a href="mailto:javiertorrecillareyes@gmail.com" className="contact-link">javiertorrecillareyes@gmail.com</a>
+              <a href="mailto:javiertorrecillareyes@gmail.com" className="contact-link">{contactsData.email}</a>
             </div>
           </li>
 
@@ -38,7 +44,7 @@ function Sidebar() {
             </div>
             <div className="contact-info">
               <p className="contact-title">Móvil</p>
-              <a href="tel:+12133522795" className="contact-link">+34 622680875</a>
+              <a href="tel:+34622680875" className="contact-link">{contactsData.phone}</a>
             </div>
           </li>
 
@@ -48,7 +54,7 @@ function Sidebar() {
             </div>
             <div className="contact-info">
               <p className="contact-title">Fecha de Nacimiento</p>
-              <time dateTime="1982-06-23">16/01/2003</time>
+              <time dateTime="2003-01-16">{contactsData.date}</time>
             </div>
           </li>
 
@@ -67,13 +73,24 @@ function Sidebar() {
 
         <ul className="social-list">
           <li className="social-item">
-            <a href="#" className="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href={socialsData.linkedIn} className="social-link">
+              <FaLinkedin className="icon-linkedin" />
             </a>
           </li>
           <li className="social-item">
-            <a href="#" className="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a href={socialsData.github} className="social-link">
+              <FaGithub className="icon-github" />
+            </a>
+          </li>
+          <li className="social-item">
+            <a
+              href={headerData.resumePdf}
+              download='CV_Javier_Torrecilla_Reyes'
+              target='_blank'
+              rel='noreferrer'
+              className="social-link"
+            >
+              <GrDocumentText className="icon-resume" />
             </a>
           </li>
         </ul>
@@ -81,5 +98,6 @@ function Sidebar() {
     </aside>
   );
 }
+
 
 export default Sidebar;
