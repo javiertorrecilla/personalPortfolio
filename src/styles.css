@@ -788,6 +788,12 @@ main {
 
 .article-title { margin-bottom: 30px; }
 
+.resume-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 
 /**
  * education and experience 
@@ -1721,7 +1727,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .clients-item { min-width: calc(25% - 38px); }
 
+  .resume-grid {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
+  .resume-grid > section {
+    width: 48%;
+  }
 
   /**
    * PORTFOLIO
