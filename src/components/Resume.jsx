@@ -1,5 +1,3 @@
-
-
 import Education from "./Education";
 import Experience from "./Experience";
 
@@ -10,9 +8,10 @@ export default function Resume() {
         <h2 className="h2 article-title">Currículum</h2>
       </header>
 
-      <Education />
-      <Experience />
-
+      <div className="resume-grid">
+        <Education />
+        <Experience />
+      </div>
     </article>
   );
 }
