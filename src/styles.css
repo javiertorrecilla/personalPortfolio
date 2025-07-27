@@ -1,17 +1,4 @@
 /*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
@@ -898,10 +885,11 @@ main {
   border: 1px solid var(--jet);
   border-radius: 14px;
   z-index: 2;
-  opacity: 0;
+
+  opacity: 1;
   visibility: hidden;
   pointer-events: none;
-  transition: 0.15s ease-in-out;
+  transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out;
 }
 
 .filter-select.active + .select-list {
@@ -1590,7 +1578,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .article-title { padding-bottom: 20px; }
 
-  .filter-select-box { display: none; }
+ .filter-select-box{display: none;}
 
   .filter-list {
     display: flex;
