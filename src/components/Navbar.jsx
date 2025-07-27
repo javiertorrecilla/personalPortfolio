@@ -6,8 +6,8 @@ export default function Navbar() {
   const navItems = [
     { name: "Sobre mí", path: "/" },
     { name: "Currículum", path: "/curriculum" },
-    { name: "Portafolio", path: "/portfolio" },
     { name: "Certificaciones", path: "/certificaciones" },
+    { name: "Portafolio", path: "/portfolio" },
     { name: "Contacto", path: "/contacto" },
   ];
 
