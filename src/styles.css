@@ -616,6 +616,19 @@ main {
   overflow: hidden;
 }
 
+.testimonials-intro {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  display: -webkit-box;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 35px;
+}
+
 
 /**
  * #testimonials-modal
@@ -1406,7 +1419,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     border-radius: 20px;
   }
 
-  .testimonials-avatar-box img { width: 80px; }
+  .testimonials-avatar-box img { height: 80px; width: 80px; }
 
   .testimonials-item-title {
     margin-bottom: 10px;
