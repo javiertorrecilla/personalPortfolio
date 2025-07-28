@@ -1,3 +1,4 @@
+import Skills from "./Skills";
 
 export default function About() {
   return (
@@ -14,6 +15,7 @@ export default function About() {
           A lo largo de mi carrera, he adquirido experiencia sólida en desarrollo back-end con Java, Python y Node.js, así como en front-end con React. He participado en varios proyectos web que han fortalecido mis habilidades de resolución de problemas y aplicado mis conocimientos teóricos a escenarios reales. Además, cuento con un nivel B2 de inglés, lo que amplía mis habilidades de comunicación y adaptabilidad cultural.        </p>
       </section>
 
+      <Skills />
     </article>
   );
 }
