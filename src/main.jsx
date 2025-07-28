@@ -7,9 +7,7 @@ import App from './App.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter> {/* Envuelve ThemeContextProvider y App con BrowserRouter */}
-      <ThemeContextProvider>
-        <App />
-      </ThemeContextProvider>
+      <App />
     </BrowserRouter>
   </StrictMode>,
 );
