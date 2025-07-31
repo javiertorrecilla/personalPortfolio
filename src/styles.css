@@ -297,9 +297,11 @@ article.active {
   z-index: -1;
 }
 
-
-
-
+button[data-select-item]:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
 
 /*-----------------------------------*\
   #MAIN
@@ -1006,12 +1008,14 @@ main {
 
 .project-item > a:hover img { transform: scale(1.1); }
 
-.project-title { margin-left: 10px; }
+.project-title { 
+  margin-left: 10px; 
+  margin-bottom: 10px;
+}
 
 .project-title {
   color: var(--white-2);
   font-size: var(--fs-5);
-  font-weight: var(--fw-400);
   text-transform: capitalize;
   line-height: 1.3;
 }
@@ -1844,8 +1848,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: 75%;
     margin: 0;
   }
-
-
 
   /**
    * SIDEBAR
