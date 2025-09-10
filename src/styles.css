@@ -49,6 +49,7 @@
   /* solid */
 
   --jet: hsl(210, 15%, 30%);
+  --navbar: hsla(240, 1%, 17%, 0.75);
   --onyx: hsl(210, 15%, 25%);
   --eerie-black-1: hsl(210, 20%, 20%);
   --eerie-black-2: hsl(210, 20%, 18%);
@@ -103,9 +104,6 @@
   align-items: center;
 
 }
-
-
-
 
 
 /*-----------------------------------*\
@@ -466,7 +464,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: var(--navbar);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
