@@ -1,37 +1,34 @@
-import React, { useRef } from "react";
+import { useState } from "react";
 import { FiSend } from "react-icons/fi";
 
-export default function ContactForm() {
-  const form = useRef();
+const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    nombre: "",
+    email: "",
+    mensaje: "",
+  });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const data = new FormData(form.current);
-    const name = data.get("fullname");
-    const email = data.get("email");
-    const message = data.get("message");
-
-    const subject = `Mensaje de ${name}`;
-    const body = `${message}\n\nDesde: ${email}`;
-    const mailtoLink = `mailto:javiertorrecillareyes@gmail.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
-
-    window.location.href = mailtoLink;
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
     <section className="contact-form">
       <h3 className="h3 form-title">Formulario de Contacto</h3>
 
-      <form ref={form} onSubmit={handleSubmit} className="form">
+      <form
+        className="form"
+        action="https://formsubmit.co/javiertorrecillareyes@gmail.com"
+        method="POST"
+      >
         <div className="input-wrapper">
           <input
             type="text"
-            name="fullname"
+            name="nombre"
             className="form-input"
             placeholder="Nombre completo"
+            value={formData.nombre}
+            onChange={handleChange}
             required
           />
           <input
@@ -39,22 +36,39 @@ export default function ContactForm() {
             name="email"
             className="form-input"
             placeholder="Correo electrónico"
+            value={formData.email}
+            onChange={handleChange}
             required
           />
         </div>
 
         <textarea
-          name="message"
+          name="mensaje"
           className="form-input"
           placeholder="Tu mensaje"
+          rows="5"
+          value={formData.mensaje}
+          onChange={handleChange}
           required
-        ></textarea>
+        />
 
         <button className="form-btn" type="submit">
           <FiSend />
           <span>Enviar mensaje</span>
         </button>
+
+        {/* Campos ocultos de FormSubmit */}
+        <input type="hidden" name="_next" value="https://javiertorrecilla-portfolio.vercel.app/" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_subject"
+          value="Nuevo mensaje desde Portfolio"
+        />
+        <input type="hidden" name="_template" value="table" />
       </form>
     </section>
   );
-}
+};
+
+export default ContactForm;
